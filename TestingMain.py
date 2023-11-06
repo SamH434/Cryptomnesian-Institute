@@ -38,7 +38,7 @@ class Settings(object):
             "Credits":["Zhiyuan Huang"],
 
             #"Enter":["Continue"],
-            } 
+            }
         
 def destroy(self):
     # Destroy the window
