@@ -3,9 +3,9 @@ import random
 import sys
 from threading import Thread
 
-import CaesarTool
 import pygame
 
+import CaesarTool
 import IntroductionText
 import Level1Cipher
 import Level1Text
@@ -175,12 +175,12 @@ class PygView(object):
     def run(self):
         """The mainloop
         """
-        #self.paint() 
+        #self.paint()
         running = True
         while running:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    running = False 
+                    running = False
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         running = False
@@ -193,7 +193,7 @@ class PygView(object):
                         result = m.get_text()
                         print(result)
                         if result is None:
-                            break 
+                            break
                         elif "x" in result:
                             # change screen resolution, menu text is something like "800x600"
                             left = result.split("x")[0]
@@ -248,9 +248,9 @@ class PygView(object):
                                             
 
             milliseconds = self.clock.tick(self.fps)
-            self.playtime += milliseconds / 1000.0 
+            self.playtime += milliseconds / 1000.0
             self.draw_text("FPS: {:6.3}".format(
-                           self.clock.get_fps()), color=(30, 120 ,18))
+                            self.clock.get_fps()), color=(30, 120 ,18))
             #pygame.draw.line(self.screen,(random.randint(0,255),random.randint(0,255), random.randint(0,255)),(50,self.height - 80),(self.width -50,self.height - 80) ,3)             
             self.paint()
             pygame.display.flip()

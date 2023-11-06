@@ -34,7 +34,7 @@ def VignereCommand():
     
     root = tk.Tk()
     root.title('Vignere Cipher')
-  
+
     root.configure(bg='white')
 
     input_label = tk.Label(root, text='Enter Text:', bg='white')
