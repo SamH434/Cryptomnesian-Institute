@@ -168,9 +168,6 @@ class PygView(object):
             self.screen.blit(input_text, (input_box.x + 5, input_box.y + 5))
             pygame.display.flip()
 
-    
-     
-
 
     def run(self):
         """The mainloop
