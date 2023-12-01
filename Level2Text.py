@@ -8,11 +8,11 @@ def Level2Command():
     root.configure(bg='black')
 
     # Create the label and button widgets   
-    label_text0 = "Mission 2"
+    label_text0 = "Congratulations!"
     label0 = tk.Label(root, text=label_text0, fg='green', bg='black', font=('Helvetica', 20), justify='center', wraplength=400)
     label0.pack(pady=30)
 
-    label_text = ''' to inform you that our Cybersecurity Branch has successfully infiltrated an enemy intelligence agency's database and obtained a cipher that requires decryption. However, we must proceed with caution as there is a security protocol in place that can detect multiple entries (Limit: 3); if the limit is reached, the program will terminate and may risk expsoing our agency. As such, we urge you to exercise the utmost care and precision in your decryption efforts.'''
+    label_text = '''Congratulations on your outstanding achievement! Your grade is above 90, showcasing your dedication and excellence. Revel in the success and let the soothing low-frequency experience create a positive and calming atmosphere. Your commitment to academic excellence is truly commendable, and PsyCommuVer1 is here to celebrate your achievements.'''
     label = tk.Label(root, text=label_text, fg='green', bg='black', font=('Helvetica', 12), justify='center', wraplength=400)
     label.pack(pady=30)
     button = tk.Button(root, text="Understood", bg='black', fg='white', font=('Helvetica', 12), command=root.destroy)

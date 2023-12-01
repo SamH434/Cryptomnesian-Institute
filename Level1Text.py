@@ -8,11 +8,11 @@ def Level1Command():
     root.configure(bg='black')
 
     # Create the label and button widgets
-    label_text0 = "Mission 1"
+    label_text0 = "Don't Give Up!"
     label0 = tk.Label(root, text=label_text0, fg='green', bg='black', font=('Helvetica', 20), justify='center', wraplength=400)
     label0.pack(pady=30)
 
-    label_text = "We are to inform you that our reconnaissance troops in the excavation site at Point B-7 have discovered a tomb and are in need of assistance in decrypting the code found within. Our analysts have suggested the possiblity of the cipher being a shift-based substitution cipher, although we do not know the shift value. The tomb has also been observed to have a weight-manipulated locking system, where if the code is entered incorrecly 4 times, the tomb will collapse in on itself and the subject of interest within will be destroyed. As our top priority is the successful retrieval and analysis of any potential intelligence, we urge you to provide us with your most skilled cryptography and decryption skills immediately. Any delay in this matter could result in the loss of crucial data."
+    label_text = """Your commitment to growth is commendable! While your recent performance falls below 60, we encourage you to view this as an opportunity for improvement. Remember, every challenge is a stepping stone toward success. Embrace the encouraging message below, and let the comforting frequency guide you towards a positive and supportive learning environment. You have the resilience to overcome obstacles and turn them into triumphs. Every stumble is a step towards success. Keep going, and remember, failure is just the beginning of your journey to success."""
     label = tk.Label(root, text=label_text, fg='green', bg='black', font=('Helvetica', 12), justify='center', wraplength=400)
     label.pack(pady=30)
     button = tk.Button(root, text="Understood", bg='black', fg='white', font=('Helvetica', 12), command=root.destroy)

@@ -22,17 +22,17 @@ import VignereTool
 
 
 class Settings(object):
-    menu = {"root":["Introduction","Briefing", "Missions","Cipher Tools","Options", "Credits", "Resign"],
+    menu = {"root":["Introduction","Briefing", "Activity Log","Frequency Configuration","Capture Sizing", "Credits", "Resign"],
 
             "Introduction":["Welcome Letter"],
 
             "Briefing":["Operation Briefing"],
 
-            "Missions":["Mission 1","Mission 2","Mission 3","Mission 4"],
+            "Activity Log":["Below 60","Above 90"],
 
-            "Cipher Tools":["Caesar Cipher", "Morse Code", "Serial Cipher","Vignere Cipher"],
+            "Frequency Configuration":["Reset Frequency", "Amplitude Adjustment", "Serial Config","Custom Frequency"],
 
-            "Options":[ "Change screen size"],
+            "Capture Sizing":[ "Change screen size"],
             "Change screen size":["640x400", "800x500", "1000x1000"],
 
             "Credits":["Zhiyuan Huang"],
@@ -60,7 +60,7 @@ class Menu(object):
         else:
             self.active_itemnumber+=1
         return self.active_itemnumber
-            
+        
     def previousitem(self):
         if self.active_itemnumber==0:
             self.active_itemnumber=len(self.items)-1
@@ -129,7 +129,7 @@ class PygView(object):
         menu_distance = 50 # distance between title and menu
         title_center = (self.width // 2, 40)
         title_font = pygame.font.SysFont("mono", 43)
-        title_text = title_font.render("Cryptomnesian Institute", True, (255, 255, 255))
+        title_text = title_font.render("PsycommuVer1", True, (255, 255, 255))
         title_rect = title_text.get_rect(center=title_center)
         self.screen.blit(title_text, title_rect)
 
@@ -213,10 +213,10 @@ class PygView(object):
                             IntroductionText.IntroductionTextCommand()
                         elif result == "Operation Briefing":
                             MissionText.MissionCommand()
-                        elif result == "Mission 1":
+                        elif result == "Below 60":
                             Level1Text.Level1Command()
                             Level1Cipher.TombCommand()
-                        elif result == "Mission 2":
+                        elif result == "Above 90":
                             Level2Text.Level2Command()
                             Level2Cipher.SystemCommand()
                         elif result == "Mission 3":
